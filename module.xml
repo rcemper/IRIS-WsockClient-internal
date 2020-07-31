@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-  <Document name="websocket-client-iris-internal.ZPM">
+  <Document name="iris-internal-websocket-client.ZPM">
     <Module>
-      <Name>websocket-client-iris-internal</Name>
-      <Version>1.0.1</Version>
+      <Name>iris-internal-websocket-client</Name>
+      <Version>1.0.0</Version>
       <Description>Using %Net.WebSocket in IRIS</Description>
       <Keywords>Terminal, COS</Keywords>
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
-       <Resource Name="WSCI.PKG"/>
+       <Resource Name="rcc.PKG"/>
     </Module>
   </Document>
 </Export>
