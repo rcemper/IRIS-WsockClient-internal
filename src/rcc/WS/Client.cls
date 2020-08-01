@@ -11,13 +11,7 @@ ClassMethod Try(
 	%b = 0)
 {
 	kill %ct
-	set csp=$SYSTEM.CSP.GetGatewayRegistry().GetGatewayMgrs()
-	if 'csp.Count() {
-		write !,"SORRY: No CSP Gateway Manager found",!
-		,"Open System Management Portal and retry after",! 
-		quit
-		}
-	set port=csp.GetAt(1).Port	
+	set port=^%SYS("WebServer","Port")	
 		,msg="hallo WS demo server"
  		,evl=##class(rcc.WS.EVL).%New()
  	set:'$d(url) url="http://localhost:"_port_"/csp/"_$namespace_"/rcc.EchoServer.cls"
