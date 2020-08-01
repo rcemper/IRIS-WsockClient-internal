@@ -21,10 +21,10 @@ But if you have some other echo server (e.g. ws://echo.websocket.org)
 you just pass the URL as param.  
 
 You start it  
-by DO ##CLASS(rcc.WSClient).Try()  
-or DO ##CLASS(rcc.WSClient).Try(server_url)  
+by DO ##CLASS(rcc.WS.Client).Try()  
+or DO ##CLASS(rcc.WS.Client).Try(server_url)  
 ~~~
-USER>DO ##CLASS(rcc.WSClient).Try()   
+USER>DO ##CLASS(rcc.WS.Client).Try()   
 OPEN  
 MESSAGE:10@%Stream.TmpCharacter   
 Welcome to Cache WebSocket. NameSpace: USER   
