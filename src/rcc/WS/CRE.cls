@@ -1,5 +1,5 @@
 /// Not really required
-Class rcc.CRE Extends (%RegisteredObject, %Net.WebSocket.ICredentials)
+Class rcc.WS.CRE Extends (%RegisteredObject, %Net.WebSocket.ICredentials)
 {
 
 /// Returns the username to use for authentication with the web socket
