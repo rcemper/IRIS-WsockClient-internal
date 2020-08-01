@@ -1,7 +1,7 @@
 /// Event Listerner for WebSocket Client
 /// local array %ct  counts OPEN, CLOSE, ERRORS, MeSSACGES
 /// for debugging from terminal set %b=1 
-Class rcc.EVL Extends (%RegisteredObject, %Net.WebSocket.IEventListener)
+Class rcc.WS.EVL Extends (%RegisteredObject, %Net.WebSocket.IEventListener)
 {
 
 /// Called when the web socket connection is successfully opened. <br />
