@@ -73,3 +73,5 @@ new message (*=exit):*
 ERROR #28000: Connection closed  
 USER>  
 ~~~   
+
+[Article in DC](https://community.intersystems.com/post/websocket-client-iris-internal)
