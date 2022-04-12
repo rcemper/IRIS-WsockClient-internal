@@ -14,7 +14,7 @@ ClassMethod Try(
 	set port=^%SYS("WebServer","Port")	
 		,msg="hallo WS demo server"
  		,evl=##class(rcc.WS.EVL).%New()
- 	set:'$d(url) url="http://localhost:"_port_"/csp/"_$namespace_"/rcc.EchoServer.cls"
+ 	set:'$d(url) url="http://localhost:"_port_"/csp/"_$namespace_"/rcc.WS.EchoServer.cls"
 #; init connection 	
  	set ws=##class(%Net.WebSocket.Client).%New(url,,evl)
 #; check reply every 4 sec
