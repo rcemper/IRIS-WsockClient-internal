@@ -1,5 +1,5 @@
 /// Enhanced WebSocket Echo Server from Caché SAMPLES
-Class WSCI.EchoServer Extends %CSP.WebSocket
+Class rcc.WS.EchoServer Extends %CSP.WebSocket
 {
 
 Method OnPreServer() As %Status
