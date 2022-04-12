@@ -23,7 +23,7 @@ ClassMethod Try(
  		if $e(msg="*") set msg="exit"  
  		do:$l(msg) ws.Send(msg)
  		if msg="exit" quit 
- 		read "new message (*=exit):",msg:3 w:$l(msg) ! 
+ 		read "new message (*=exit):",msg:5 w:$l(msg) ! 
  		}
  	do ws.Next(15)  ; final wait for sever exit
  	kill ws      ;close
