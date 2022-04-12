@@ -12,7 +12,7 @@ ClassMethod Try(
 {
 	kill %ct
 	set port=^%SYS("WebServer","Port")	
-		,msg="hallo WS demo server"
+		,msg="hallo WS demo server IRIS"
  		,evl=##class(rcc.WS.EVL).%New()
  	set:'$d(url) url="http://localhost:"_port_"/csp/"_$namespace_"/rcc.WS.EchoServer.cls"
 #; init connection 	
