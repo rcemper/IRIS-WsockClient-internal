@@ -74,7 +74,5 @@ USER>
 [Demo Server WebTerminal](https://iris-internal-websocket-client.demo.community.intersystems.com/terminal/)    
         
 **Code Quality**   
-<img width="85%" src="
-https://openexchange.intersystems.com/mp/img/packages/671/screenshots/4bh7tyapellnv0cjgw34riapcfo.jpg
-">
+<img width="85%" src="https://openexchange.intersystems.com/mp/img/packages/1770/screenshots/2tmwymbj8w9f6drrbfiz6hj8.jpg">
 
