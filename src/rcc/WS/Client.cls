@@ -10,7 +10,7 @@ ClassMethod Try(
 	url,
 	%b = 0)
 {
-	kill %ct
+	kill %ct if %b   ;just against code SMELL 
 	set port=^%SYS("WebServer","Port")	
 		,msg="hallo WS demo server IRIS"
  		,evl=##class(rcc.WS.EVL).%New()
