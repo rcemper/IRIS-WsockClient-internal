@@ -1,3 +1,5 @@
+<p align="right"><img src="https://github.com/isc-at/CPIPE/blob/master/archived.jpg"/></p>
+
 IRIS 2010.1 brought us a new feature: %Net.WebSocket.Client  
 
 As a continuation of my series of WS Clients I just couldn't resist to try it.  
