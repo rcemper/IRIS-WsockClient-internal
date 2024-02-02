@@ -1,5 +1,3 @@
-<p align="right"><img src="https://github.com/isc-at/CPIPE/blob/master/archived.jpg"/></p>
-
 IRIS 2010.1 brought us a new feature: %Net.WebSocket.Client  
 
 As a continuation of my series of WS Clients I just couldn't resist to try it.  
@@ -17,10 +15,11 @@ But if you have some other echo server (e.g. ws://echo.websocket.org)
 you just pass the URL as param.  
 
 You start it  
-by DO ##CLASS(rcc.WS.Client).Try()  
-or DO ##CLASS(rcc.WS.Client).Try(server_url)  
+by **DO ##CLASS(WSCI.Client).Try()**    
+or DO ##CLASS(WSCI.Client).Try(server_url)   
+
 ~~~
-USER>DO ##CLASS(rcc.WS.Client).Try()   
+USER>DO ##CLASS(WSCI.Client).Try()   
 OPEN  
 MESSAGE:10@%Stream.TmpCharacter   
 Welcome to Cache WebSocket. NameSpace: USER   
@@ -68,7 +67,7 @@ new message (*=exit):*
     
 ERROR #28000: Connection closed  
 USER>  
-~~~   
+~~~
 
 [Article in DC](https://community.intersystems.com/post/websocket-client-iris-internal)
 
