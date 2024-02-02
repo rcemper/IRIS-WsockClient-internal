@@ -4,7 +4,7 @@
     // ** Comment out these two line for Production use **
     do ##class(Security.Users).UnExpireUserPasswords("*")
     zpm "install passwordless"
-    zpm "webterminal"
+    zpm "install webterminal"
 
     ZN "USER"
     zpm "load /home/irisowner/dev/ -v":1
