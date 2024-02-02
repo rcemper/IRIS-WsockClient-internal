@@ -1,5 +1,5 @@
 /// Enhanced WebSocket Echo Server from Caché SAMPLES
-Class rcc.WS.EchoServer Extends %CSP.WebSocket
+Class WSCI.EchoServer Extends %CSP.WebSocket
 {
 
 Method OnPreServer() As %Status
@@ -11,7 +11,7 @@ Method Server() As %Status
 {
 	Set $ZT="Error"
 	Set timeout=10
-	Set status=..Write("Welcome to IRIS WebSocket. NameSpace: "_$NameSpace)
+	Set status=..Write("Welcome to Cache WebSocket. NameSpace: "_$NameSpace)
 	For  {
 		Set len=32656
 		Set data=..Read(.len, .status, timeout)
