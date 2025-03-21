@@ -30,14 +30,18 @@ The default assumption is to have Client and Server on the same system & namespa
 But if you have some other echo server (e.g. ws://echo.websocket.org)    
 you just pass the URL as param.  
 
+### Testing
 Start it by
 ```
 DO ##CLASS(WSCI.Client).Try()
 ```  
-or for specific WebSocked Server
+or for your specific WebSocked Server
 ```
 DO ##CLASS(WSCI.Client).Try(server_url)
 ```
+when prompted by **new message**   
+enter any text or **\*** to stop or fall into timeout
+
 #### Example with local WebSoket Server   
 ~~~
 USER>DO ##CLASS(WSCI.Client).Try()   
@@ -91,8 +95,7 @@ USER>
 ~~~
 #### HINT 
 If you receive **\<INVALID OREF\> Try+2^WSCI.Client.1** during first access   
-verify that you can access SMP (aka. **System Management Portal**).    
-CSP Gateway may still need inactivation.  
+verify that you can access SMP (aka. **System Management Portal**).     
 Then retry the example.
 
 [Article in DC](https://community.intersystems.com/post/websocket-client-iris-internal)
