@@ -11,9 +11,10 @@ ClassMethod Try(
 	%b = 0)
 {
 	kill %ct
-	set port=$SYSTEM.CSP.GetGatewayRegistry().GetGatewayMgrs().GetAt(1).Port	
+	set m=$SYSTEM.CSP.GetGatewayRegistry().GetGatewayMgrs()
 		,msg="hallo WS demo server"
  		,evl=##class(WSCI.EVL).%New()
+ 		,port=$s(m.Size:m.GetAt(1).Port,1:52773)
  	set:'$d(url) url="http://localhost:"_port_"/csp/"_$namespace_"/WSCI.EchoServer.cls"
 #; init connection 	
  	set ws=##class(%Net.WebSocket.Client).%New(url,,evl)
