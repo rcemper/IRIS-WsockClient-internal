@@ -9,15 +9,36 @@ You basically need to prepare 3 classes:
 - an Event Listener
 - the Client  (Could be a .MAC routine as well) 
 
+### Prerequisites
+Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
+### Installation
+Clone/git pull the repo into any local directory
+```
+$ git clone https://github.com/rcemper/IRIS-WsockClient-internal
+```
+To build and start the container run:
+```
+$ docker compose up -d && docker compose logs -f
+```
+To open IRIS Terminal do:
+```
+$ docker-compose exec iris iris session iris
+USER>
+```
 The example uses the WSS.EchoServer (a derivate from former SAMPLES in Caché).  
 The default assumption is to have Client and Server on the same system & namespace.  
 But if you have some other echo server (e.g. ws://echo.websocket.org)    
 you just pass the URL as param.  
 
-You start it  
-by **DO ##CLASS(WSCI.Client).Try()**    
-or DO ##CLASS(WSCI.Client).Try(server_url)   
-
+Start it by
+```
+DO ##CLASS(WSCI.Client).Try()
+```  
+or for specific WebSocked Server
+```
+DO ##CLASS(WSCI.Client).Try(server_url)
+```
+#### Example with local WebSoket Server   
 ~~~
 USER>DO ##CLASS(WSCI.Client).Try()   
 OPEN  
@@ -70,7 +91,7 @@ USER>
 ~~~
 #### HINT 
 If you receive **\<INVALID OREF\> Try+2^WSCI.Client.1** during first access   
-verify that you can access SMP (aka. **System Management Portsl**). 
+verify that you can access SMP (aka. **System Management Portal**).    
 CSP Gateway may still need inactivation.  
 Then retry the example.
 
