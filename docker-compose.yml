@@ -8,8 +8,8 @@ services:
     restart: always
     command: --check-caps false --ISCAgent false
     ports:
-      - 51663:1972
-      - 52663:52773
+      - 41773:1972
+      - 427733:52773
       - 53773
     volumes:
       - ./:/home/irisowner/dev
