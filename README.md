@@ -70,7 +70,8 @@ USER>
 ~~~
 #### HINT 
 If you receive **\<INVALID OREF\> Try+2^WSCI.Client.1** during first access   
-verify that you can access SMP. CSP Gateway may still need inactivation.  
+verify that you can access SMP (aka. **System Management Portsl**). 
+CSP Gateway may still need inactivation.  
 Then retry the example.
 
 [Article in DC](https://community.intersystems.com/post/websocket-client-iris-internal)
