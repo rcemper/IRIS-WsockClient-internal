@@ -18,13 +18,13 @@ ClassMethod Try(
  	set:'$d(url) url="http://localhost:"_port_"/csp/"_$namespace_"/WSCI.EchoServer.cls"
 #; init connection 	
  	set ws=##class(%Net.WebSocket.Client).%New(url,,evl)
-#; check reply every 4 sec
- 	while ws.Next(4) { 
+#; check reply every 5 sec
+ 	while ws.Next(5) { 
  		write "--------------- next ---------------",! 
  		if $e(msg="*") set msg="exit"  
  		do:$l(msg) ws.Send(msg)
  		if msg="exit" quit 
- 		read "new message (*=exit):",msg:3 w:$l(msg) ! 
+ 		read "new message (*=exit):",msg:8 w:$l(msg) ! 
  		}
  	do ws.Next(15)  ; final wait for sever exit
  	kill ws      ;close
