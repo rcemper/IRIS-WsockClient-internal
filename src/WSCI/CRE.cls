@@ -1,4 +1,4 @@
-/// Not really required
+/// added SSL for wss://echo.websocket.org/
 Class WSCI.CRE Extends (%RegisteredObject, %Net.WebSocket.ICredentials)
 {
 
@@ -14,6 +14,13 @@ Method GetUsername() As %String
 Method GetPassword() As %String
 {
 	quit "SYS"
+}
+
+/// Returns the SSL configuration name to use for secure web socket connections
+/// @API.Overrideable
+Method GetSSLConfiguration() As %String
+{
+	Quit "websocket"
 }
 
 }
