@@ -25,10 +25,10 @@ To open IRIS Terminal do:
 $ docker-compose exec iris iris session iris
 USER>
 ```
-The example uses the WSS.EchoServer (a derivate from former SAMPLES in Caché).  
+The example uses the WSS.EchoServer (a derivate of former SAMPLES in Caché).  
 The default assumption is to have Client and Server on the same system & namespace.  
-But if you have some other echo server (e.g. ws://echo.websocket.org)    
-you just pass the URL as param.  
+But if you have some other echo server (e.g. wss://echo.websocket.org) 
+you just pass the URL as a parameter.  
 
 ### Testing
 Start it by
@@ -36,6 +36,7 @@ Start it by
 DO ##CLASS(WSCI.Client).Try()
 ```  
 or for your specific WebSocked Server
+SSL ready and tested with "wss://echo.websocket.org/"
 ```
 DO ##CLASS(WSCI.Client).Try(server_url)
 ```
